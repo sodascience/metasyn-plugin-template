@@ -1,12 +1,12 @@
-"""{{ cookiecutter.plugin_name }} privacy class."""
+"""{{ plugin_name }} privacy class."""
 
 from metasyn.privacy import BasePrivacy
 
 
-class {{ cookiecutter.__plugin_camel }}Privacy(BasePrivacy):
-    """{{ cookiecutter.plugin_name }} privacy class.
+class {{ prefix }}Privacy(BasePrivacy):
+    """{{ plugin_name }} privacy class.
     """
-    name = "{{ cookiecutter.__package_name }}"
+    name = "{{ plugin_name }}"
 
     def __init__(self):  # Add to the arguments/parameters here.
         raise NotImplementedError("Privacy class not implemented.")

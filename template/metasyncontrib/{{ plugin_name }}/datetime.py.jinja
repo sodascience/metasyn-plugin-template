@@ -1,4 +1,4 @@
-"""{{ cookiecutter.plugin_name }} classes for date/time/datetime distributions."""
+"""{{ plugin_name }} classes for date/time/datetime distributions."""
 
 from __future__ import annotations
 import datetime as dt
@@ -9,30 +9,30 @@ from metasyn.distribution.datetime import DateTimeUniformDistribution
 from metasyn.distribution.datetime import TimeUniformDistribution
 from metasyn.distribution.datetime import DateUniformDistribution
 
-{{ cookiecutter.__metadist_import }}
+{{ metadist_import_import }}
 
 
-# {{ cookiecutter.__decorate }}
-# class {{ cookiecutter.prefix }}DateTimeUniform(DateTimeDistributionUniform):
-#     """DateTimeUniform distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
+# {{ decorator }}
+# class {{ prefix }}DateTimeUniform(DateTimeDistributionUniform):
+#     """DateTimeUniform distribution implementation with {{ plugin_name|lower }}."""
 #
 #     @classmethod
 #     def _fit(cls, values: pl.Series, extra_argument=default_value):
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
-# {{ cookiecutter.__decorate }}
-# class {{ cookiecutter.prefix }}TimeUniform(TimeUniformDistribution):
-#     """TimeUniform distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
+# {{ decorator }}
+# class {{ prefix }}TimeUniform(TimeUniformDistribution):
+#     """TimeUniform distribution implementation with {{ plugin_name|lower }}."""
 #
 #     @classmethod
 #     def _fit(cls, values: pl.Series, extra_argument=default_value):
 #         raise NotImplementedError("This distribution is not implemented yet.")
 
 
-# {{ cookiecutter.__decorate }}
-# class {{ cookiecutter.prefix }}DateUniform(DateUniformDistribution):
-#     """DateUniform distribution implementation with {{ cookiecutter.plugin_name|lower }}."""
+# {{ decorator }}
+# class {{ prefix }}DateUniform(DateUniformDistribution):
+#     """DateUniform distribution implementation with {{ plugin_name|lower }}."""
 #
 #     @classmethod
 #     def _fit(cls, values: pl.Series, extra_argument=default_value):

@@ -3,14 +3,14 @@ requires = ["setuptools>=45", "setuptools-scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "{{ cookiecutter.__plugin_slug }}"
+name = "{{ plugin_name }}"
 authors = [
-    {name = "{{ cookiecutter.user_name }}", email = "{{ cookiecutter.email }}"},
+    {name = "{{ user_name }}", email = "{{ email }}"},
 ]
-description = "Plugin package for metasyn with {{ cookiecutter.plugin_name|lower }}."
+description = "Plugin package for metasyn with {{ plugin_name }}."
 readme = "README.md"
 requires-python = ">=3.8"
-keywords = ["metasyn", "{{ cookiecutter.plugin_name }}"]
+keywords = ["metasyn", "{{ plugin_name }}"]
 license = {text = "MIT"}
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -30,7 +30,7 @@ test = [
 packages = ["metasyncontrib"]
 
 [project.entry-points."metasyn.distribution_provider"]
-{{ cookiecutter.__package_name }} = "metasyncontrib.{{ cookiecutter.__package_name }}.provider:{{ cookiecutter.__plugin_camel }}Provider"
+{{ plugin_name }} = "metasyncontrib.{{ plugin_name }}.provider:{{ prefix }}Provider"
 
 [project.entry-points."metasyn.privacy"]
-{{ cookiecutter.__package_name }} = "metasyncontrib.{{ cookiecutter.__package_name }}.privacy:{{ cookiecutter.__plugin_camel }}"
+{{ plugin_name }} = "metasyncontrib.{{ plugin_name }}.privacy:{{ prefix }}"
